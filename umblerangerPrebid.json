@@ -1,3 +1,99 @@
 {
-    "v":"1"
+    "cfg": {
+        "on": true,
+        "id": "1",
+        "pkg": "com.affinity.test01",
+        "ttl": 24,
+        "v" : "1.0"
+    },
+    "s2s":[ 
+        {
+            "serverName":"prebidDemo",
+            "on": true,
+            "account_id": "0689a263-318d-448b-a3d4-b02e8a709d9d",
+            "host": "https://prebid-server-test-j.prebid.org/openrtb2/auction",
+            "status": "https://prebid-server-test-j.prebid.org/status"
+        }
+    ],
+    "consent": {
+            "on":true,
+            "gdpr":0,
+            "copa":0
+    },
+    "appAdspot":[
+        {
+            "banSpot1":{
+                "code": "a1Ban"
+            },
+            "intSpot1":{
+                "code": "a1Int"
+            },
+            "rewSpot1":{
+                "code": "a1Rew"
+            }
+        }
+    ],
+    "aus": [
+            {
+                "on": true,
+                "code": "a1Ban",
+                "tp": 1,
+                "au": "/21808260008/prebid_demo_app_original_api_banner",
+                "szs": [[320, 50]],
+                "sau": {
+                    "on": true,
+                    "au": "/21808260008/prebid_demo_app_original_api_banner"
+                },
+                "s2s": {
+                    "on": true,
+                    "cfg_id": "prebid-demo-banner-320-50",
+                    "serverName":"prebidDemo"
+                },
+                "ref": {
+                    "on": true,
+                    "au": "/21808260008/prebid_demo_app_original_api_banner"
+                }                        
+            },
+            {
+                "on": true,
+                "code": "a1Int",
+                "tp": 2,
+                "au": "/21808260008/prebid-demo-app-original-api-display-interstitial",
+                "szs": [[320, 480]],
+                "sau": {
+                    "on": true,
+                    "au": "/21808260008/prebid-demo-app-original-api-display-interstitial"
+                },
+                "s2s": {
+                    "on": true,
+                    "cfg_id": "prebid-demo-display-interstitial-320-480",
+                    "serverName":"prebidDemo"
+                },
+                "ref": {
+                    "on": true,
+                    "au": "/21808260008/prebid-demo-app-original-api-display-interstitial"
+                }                        
+            },
+            {
+                "on": true,
+                "code": "a1Rew",
+                "tp": 3,
+                "au": "/21808260008/prebid-demo-app-original-api-video-interstitial",
+                "szs": [[320, 480]],
+                "sau": {
+                    "on": true,
+                    "au": "/21808260008/prebid-demo-app-original-api-video-interstitial"
+                },
+                "s2s": {
+                    "on": true,
+                    "cfg_id": "prebid-demo-video-rewarded-320-480-original-api",
+                    "serverName":"prebidDemo"
+                },
+                "ref": {
+                    "on": true,
+                    "au": "/21808260008/prebid-demo-app-original-api-video-interstitial"
+                }                        
+            }
+    ]            
+                
 }
