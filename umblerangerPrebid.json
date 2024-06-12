@@ -46,7 +46,7 @@
             },
             "s2s": {
                 "on": true,
-                "cfg_id": "prebid-demo-banner-320-50-x",
+                "cfg_id": "prebid-demo-banner-320-50",
                 "serverName":"prebidDemo"
             },
             "ref": {
