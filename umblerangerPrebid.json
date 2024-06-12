@@ -23,20 +23,80 @@
     "appAdspot":[
         {
             "banSpot1":{
-                "code": "a1Ban"
+                "code": "preBidDemoBan1"
             },
             "intSpot1":{
-                "code": "a1Int"
+                "code": "preBidDemoInt1"
             },
             "rewSpot1":{
-                "code": "a1Rew"
+                "code": "preBidDemoRew1"
             }
         }
     ],
     "aus": [
-            {
+        {
+            "on": true,
+            "code": "ourS2sBan1",
+            "tp": 1,
+            "au": "/21808260008/prebid_demo_app_original_api_banner",
+            "szs": [[320, 50]],
+            "sau": {
                 "on": true,
-                "code": "a1Ban",
+                "au": "/21808260008/prebid_demo_app_original_api_banner"
+            },
+            "s2s": {
+                "on": true,
+                "cfg_id": "prebid-demo-banner-320-50-x",
+                "serverName":"prebidDemo"
+            },
+            "ref": {
+                "on": true,
+                "au": "/21808260008/prebid_demo_app_original_api_banner"
+            }                        
+        },
+        {
+            "on": true,
+            "code": "ourS2sInt1",
+            "tp": 2,
+            "au": "/21808260008/prebid-demo-app-original-api-display-interstitial",
+            "szs": [[320, 480]],
+            "sau": {
+                "on": true,
+                "au": "/21808260008/prebid-demo-app-original-api-display-interstitial"
+            },
+            "s2s": {
+                "on": true,
+                "cfg_id": "prebid-demo-display-interstitial-320-480-x",
+                "serverName":"prebidDemo"
+            },
+            "ref": {
+                "on": true,
+                "au": "/21808260008/prebid-demo-app-original-api-display-interstitial"
+            }                        
+        },
+        {
+            "on": true,
+            "code": "ourS2sRew1",
+            "tp": 3,
+            "au": "/21808260008/prebid-demo-app-original-api-video-interstitial",
+            "szs": [[320, 480]],
+            "sau": {
+                "on": true,
+                "au": "/21808260008/prebid-demo-app-original-api-video-interstitial"
+            },
+            "s2s": {
+                "on": true,
+                "cfg_id": "prebid-demo-video-rewarded-320-480-original-api-x",
+                "serverName":"prebidDemo"
+            },
+            "ref": {
+                "on": true,
+                "au": "/21808260008/prebid-demo-app-original-api-video-interstitial"
+            }                        
+        },        
+        {
+                "on": true,
+                "code": "preBidDemoBan1",
                 "tp": 1,
                 "au": "/21808260008/prebid_demo_app_original_api_banner",
                 "szs": [[320, 50]],
@@ -56,7 +116,7 @@
             },
             {
                 "on": true,
-                "code": "a1Int",
+                "code": "preBidDemoInt1",
                 "tp": 2,
                 "au": "/21808260008/prebid-demo-app-original-api-display-interstitial",
                 "szs": [[320, 480]],
@@ -76,7 +136,7 @@
             },
             {
                 "on": true,
-                "code": "a1Rew",
+                "code": "preBidDemoRew1",
                 "tp": 3,
                 "au": "/21808260008/prebid-demo-app-original-api-video-interstitial",
                 "szs": [[320, 480]],
@@ -94,6 +154,5 @@
                     "au": "/21808260008/prebid-demo-app-original-api-video-interstitial"
                 }                        
             }
-    ]            
-                
+    ]                           
 }
